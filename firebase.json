@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "public": "views",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "function": "app"
+      },
+      {
+        "source": "/logar",
+        "function": "app"
+      },
+      
+
+      {
+
+        "source": "/api",
+
+        "function": "app"
+
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}
