@@ -1,0 +1,106 @@
+<DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Grupo whatsapp</title>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Acesse este link para entrar no meu grupo de whatsapp.">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta name="renderer" content="webkit">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <link rel="stylesheet" type="text/css" href="css/grupo.css">
+
+</head>
+
+  <script>
+    
+
+    function get_action(form) {
+      
+var v =  grecaptcha.getResponse();
+if(v.length == 0)
+{
+    document.getElementById('captcha').innerHTML="complete o captcha";
+    return false;
+}
+ if(v.length != 0)
+ {
+   window.open("https://chat.whatsapp.com/IuNfi1HY2vWAeIilk6KpxF")
+ }
+}
+</script>
+<body>
+
+  
+
+  <div class="inicio">
+
+  <h2>Seja bem-vindo<br><br> verifique o recaptcha a baixo para ser redirecionado ao grupo</h2>
+
+  </div>
+<div>
+  </div>
+  <div class="meio">
+
+    <h2 class="titulo-primario"><strong> por que pedimos isso?</strong></h2>
+
+    <h2 class="titulo-secundario">
+
+      
+
+Para nos prevenir contra trava zaps
+
+Bots chatos de anúncios,
+
+Mais conhecidos como "spameers"
+
+    </h2>
+
+  </div>
+
+  <div class="recaptcha">
+
+    <div class="g-recaptcha" id="rcaptcha"  data-sitekey="6Ldyll0eAAAAAIW80MT-NVG33D62balzYH5l-1Cb"></div>
+  </div>
+<span id="captcha" class="captcha-erro" style="
+  display:flex;
+  color:red;
+  padding 23px;
+  align-items: center;
+" /></span>
+
+
+  <div class="wrapper">
+<button class="botao" onclick="get_action()">ir para o grupo</button>
+</div>
+ <script src="js/recaptcha.js"></script>
+
+ 
+
+  <p class="rodape">
+
+       &copy; <span id="displayYear"></span> All Rights Reserved By
+
+        <a href="https://elaxi-api.web.app/">Cls.org</a>
+
+     
+
+      </p>
+
+  
+
+  <script src="js/custom.js"></script>
+
+  </body>
+
+  </html>

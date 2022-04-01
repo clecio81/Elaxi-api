@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.7">
+  <meta name="description" content="Um bot que irá moderar e deixar a sua comunidade segura de um jeito fácil!">
+  <title><%=meta_titulo%></title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+  .inicio {
+    padding: 24px;
+  }
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #FFF2E7;
+
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: #FFF2E7;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ECD6C4;
+}
+
+.botao-documentacao {
+  background-color:rgb(12,46,197);
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+display: inline-block;
+  padding: 8px 35px;
+  background-color: #ff7070;
+  border: 1px solid #ff7070;
+  color: #ffffff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.botao-documentacao:hover {
+background-color: transparent;
+  color: #ff7070;
+}
+
+.conteudo-principal-imagem {
+  height: 430px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #FFF2E7;
+  padding-top: 48px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFF2EF;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgb(12,46,197);;
+}
+
+.rodape {
+    border-top: 0.4px solid #FFF2E7;
+}
+p.rodape{
+  position:absolute;
+	bottom:0;
+	width:100%;
+align-items: center;
+}
+</style>
+<body>
+  <div class="inicio"></div>
+  <main class="conteudo">
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <h1 class="conteudo-principal-escrito-titulo"><%=principal%></h1>
+        <h2 class="conteudo-principal-escrito-subtitulo"><%=subtitulo%></h2>
+        <button class="botao-documentacao"><%=botao_texto%></button>
+      </div>
+      <img class="conteudo-principal-imagem"src="<%=imagem%>" alt="Imag">
+    </section>
+
+    <section class="conteudo-secundario">
+      <h3 class="conteudo-secundario-titulo"><%=titulo%></h3>
+   
+      <p class="conteudo-secundario-paragrafo">
+        <%=paragrafo%>
+        </p>
+     
+    </section>
+  </main>
+<body>
+  
+  <p class="rodape">
+       &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://cls.org/">Cls.org</a>
+     
+      </p>
+  
+
+  <script src="js/custom.js"></script>
+</html>

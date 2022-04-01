@@ -1,0 +1,31 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>    
+<body>    
+    <h2>Login Page</h2><br>    
+    <div class="login">    <form class="modal-content" action="/api/database/session/login" id="loginForm" method="POST">
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="email" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="senha" id="Pass" placeholder="Password">    
+        <br><br> <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        Forgot <a href="#">Password</a>    
+    </form>     
+</div>    
+</body>    
+
+</html>     
