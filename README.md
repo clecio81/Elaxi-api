@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 # Elaxi-api
-=======
->>>>>>> edc50d6 (Create README.md)
+
 
 <h4>About Us</h4>
 Elaxi is a powerful Node.js API that allows you to interact with the CLs.org API very easily.
