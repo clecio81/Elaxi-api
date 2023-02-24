@@ -1,7 +1,6 @@
 const express = require("express");
 const admin = require("firebase-admin");
 const functions = require("firebase-functions");
-const upload = require("./router/firebase/upload.js");
 const sessions = require("./router/firebase/session.js");
 const Multer = require("multer");
 const { onAuthStateChanged, firebase, getAuth, sendPasswordResetEmail} = require("firebase/auth")
@@ -631,7 +630,6 @@ app.get("/api", async(req, res) =>{
 app.use("/api/", dog_random_img);
 //router
 
-app.use("/api/database/upload", upload);
 app.use("/api/database/session", sessions);
 
     
