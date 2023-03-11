@@ -31,3 +31,476 @@
     </div>
   </body>
 </html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+<body>
+
+<div class="primeira-tela" id="primeira-tela">
+
+<video autoplay muted loop id="myVideo">
+
+  <source src="https://firebasestorage.googleapis.com/v0/b/forty-1a729.appspot.com/o/assets%2FX2Download.app-Naruto%20Shippuden%20Opening%2016%20_%20Silhouette%20(HD)(720p).mp4?alt=media&token=ba9e82b7-6fbe-4a38-8e71-15210030a511" type="video/mp4">
+
+  Your browser does not support HTML5 video.
+
+</video>
+
+<div class="content">
+
+  <h1 style="color: #ffffff">Um convite para você</h1>
+
+  <p>Estou crescendo rápido e o meu aniversário já está chegando!
+
+  <br>Venha viver uma grande aventura em minha festa.</p>
+
+  <button id="myBtn" onclick="segunda_tela()">Clique aqui para abrir seu convite 🥳🎉</button>
+
+</div>
+
+  </div>
+
+  
+
+  <main class="main">
+
+  <div class="hidden" id="segunda-tela">
+
+  <video  id="video" autoplay="autoplay" loop="true" muted defaultmuted playsinline>
+
+  <source src="https://firebasestorage.googleapis.com/v0/b/forty-1a729.appspot.com/o/assets%2FX2Download.app-Naruto%20Shippuden%20Opening%2016%20_%20Silhouette%20(HD)(720p).mp4?alt=media&token=ba9e82b7-6fbe-4a38-8e71-15210030a511" type="video/mp4" />
+
+</video>
+
+<div class="convite">
+
+  <img  clss="img_" src="https://firebasestorage.googleapis.com/v0/b/forty-1a729.appspot.com/o/assets%2F1%20Sem%20T%C3%ADtulo_20230311114719.png?alt=media&token=6f2d946e-bb30-4ad6-a47f-c7fd62d08f7f" class="center">
+
+<a href="https://wa.me/+558781015174?text=Irei%20comparecer%20á%20festa 🥳🎉" class="btn green block circular">Confirmar presença</a>
+
+<a href="https://www.google.com/maps/place/Andr%C3%A9+vieira+barbershop+-+R.+Princesa+Isabel,+60+-+Boa+Vista,+Garanhuns+-+PE,+55292-210/@-8.9010377,-36.4945243,22z/data=!4m5!3m4!1s0x7070cf64291efa5:0x28132e8ca780789b!8m2!3d-8.9009981!4d-36.494484" class="btn blue block circular">Local da festa</a>
+
+</div>
+
+</div>
+
+</main>
+
+</body>
+
+<style>
+
+.primeira-tela {
+
+  margin: 0;
+
+  font-family: Arial;
+
+  font-size: 17px;
+
+}
+
+#myVideo {
+
+  position: fixed;
+
+  right: 0;
+
+  bottom: 0;
+
+  min-width: 100%; 
+
+  min-height: 100%;
+
+}
+
+ 
+
+.content {
+
+  position: fixed;
+
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  color: #f1f1f1;
+
+  width: 94%;
+
+  padding: 20px;
+
+}
+
+#myBtn {
+
+  width: 200px;
+
+  font-size: 18px;img{
+
+   width: 400px;
+
+    height: 400px;
+
+  }
+
+  padding: 10px;
+
+  border: none;
+
+  background: #000;
+
+  color: #fff;
+
+  cursor: pointer;
+
+}
+
+#myBtn:hover {
+
+  background: cyan;
+
+  color: green;
+
+}
+
+ @media only screen and (min-width: 300px) {
+
+  img{
+
+   width: 400px;
+
+    height: 400px;
+
+  }
+
+  .convite{
+
+   position: fixed;
+
+  bottom: -5vh;
+
+  max-width: 700px;
+
+  min-width: 700px;
+
+  width: 25%;
+
+  padding: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+img{
+
+   width: 100%;
+
+    height: 100%
+
+  }
+
+  
+
+.convite{
+
+  position: fixed;
+
+  bottom: 100px;
+
+  max-width: 700px;
+
+  min-width: 700px;
+
+  width: 80%;
+
+  padding: 20px;
+
+}
+
+}
+
+.hidden{
+
+  display: none;
+
+}
+
+#video {
+
+  position: fixed;
+
+  right: 0;
+
+  bottom: 0;
+
+  min-width: 100%; 
+
+  min-height: 100%;
+
+}
+
+.nome{
+
+  z-index: 3;
+
+  display: block;
+
+  margin-top: -250px;
+
+  margin-left: 150px;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400, 300, 600, 700);
+
+html {
+
+  font-family: "Open Sans", sans-serif;
+
+}
+
+h1 {
+
+  color: #444;
+
+}
+
+ .btn {
+
+    padding: 1em 2.1em 1.1em;
+
+    border-radius: 3px;
+
+    margin: 8px 8px 8px 8px;
+
+    color: #fbdedb;
+
+    background-color: #fbdedb;
+
+    display: inline-block;
+
+    background: #e74c3c;
+
+    -webkit-transition: 0.3s;
+
+    -moz-transition: 0.3s;
+
+    -o-transition: 0.3s;
+
+    transition: 0.3s;
+
+    font-family: sans-serif;
+
+    font-weight: 800;
+
+    font-size: .85em;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+
+    position: relative;
+
+    
+
+}
+
+ @media only screen and (min-width: 300px) {
+
+   .btn{
+
+     
+
+     width: 250px;
+
+     left: 200px;
+
+     right: auto;
+
+   }
+
+   .center{
+
+  z-index: 2;
+
+  display: block;
+
+  margin-left: auto;
+
+  max-width: 400px;
+
+  margin-right: auto;
+
+  width: 50%;
+
+}
+
+ }
+
+ @media only screen and (min-width: 768px) {
+
+   .btn{
+
+     width: 450px;
+
+     left: 125px;
+
+   }
+
+   .center{
+
+  z-index: 2;
+
+  display: block;
+
+  margin-left: 200px;
+
+  max-width: 400px;
+
+  margin-right: auto;
+
+  width: 50%;
+
+}
+
+ }
+
+.btn:hover, .btn:focus {
+
+    opacity: 0.8;
+
+}
+
+.btn:active {
+
+    -webkit-transform: scale(0.80);
+
+    -moz-transform: scale(0.80);
+
+    -ms-transform: scale(0.80);
+
+    -o-transform: scale(0.80);
+
+    transform: scale(0.80);
+
+}
+
+.btn.block {
+
+    display: block !important;
+
+}
+
+.btn.circular {
+
+  border-radius: 50em !important;
+
+}
+
+/* Colours */
+
+.red {
+
+    background-color: #d55050;
+
+}
+
+.teal {
+
+    background-color: #50d5a1;
+
+}
+
+.sky {
+
+    background-color: #6698cb;
+
+}
+
+.black {
+
+    background-color: #5c6166;
+
+}
+
+.gray {
+
+    color: black;
+
+    background-color: #d2d2d2;
+
+}
+
+.orange {
+
+    background-color: #e96633;
+
+}
+
+.pink {
+
+    background-color: #cb99c5;
+
+}
+
+.green {
+
+    background-color: #5bbd72;
+
+}
+
+.blue {
+
+    background-color: #7abedf;
+
+}
+
+.yellow {
+
+    background-color: #ecc92b;
+
+}
+
+.purple {
+
+    background-color: #564f8a;
+
+}
+
+</style>
+
+<script>
+
+function segunda_tela(){
+
+    document.getElementById("primeira-tela").classList.add("hidden")
+
+  document.getElementById("segunda-tela").classList.remove("hidden")
+
+  const v = document.getElementById("video")
+
+v.muted = false
+
+v.play();
+
+}
+
+</script>
